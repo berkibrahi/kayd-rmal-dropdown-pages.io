@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>dropdpwn page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+
+
+  </script>
+  <script src="animasyon10.js/main.js">
+  
+   
+  </script>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 300;
+       
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 50px;
+       
+        border-bottom: 2px solid aqua;
+      
+      
+        transition: 500ms all;
+        transition-delay: 2000ms;
+      
+    }
+ 
+    i{
+
+        border: 2px solid aqua;
+       position: relative;
+     z-index: 2;
+     top: 0;
+      }
+      input[type="checkbox"]{
+        display: block;
+        position: absolute;
+      top: 0;
+      right: 0;
+     
+       z-index: 3;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        opacity: 0;
+     
+       
+    }
+    .user{
+       position: relative;
+       transition: 300ms all;
+       cursor: pointer;
+
+    }
+    .form{
+        margin-bottom: 1rem;
+        transition: 300ms all;
+    }
+    form{
+      position: absolute;
+      right: 200px;
+       padding: 1.5rem;
+       background-color: black;
+       border: 3px solid aqua;
+      top: 8rem;
+      transition: 600ms all;
+      opacity: 0;
+      pointer-events: none;
+      
+    
+     
+     
+     
+     
+     
+     
+    }
+ 
+     
+    input{
+        padding: 1rem 2rem;
+        border: 3px solid aqua;
+    }
+    input[type="submit"]{
+        cursor: pointer;
+        background-color: aqua;
+        width: 100%;
+        transition: 300ms all;
+        color: white;
+       
+    } 
+    input::placeholder{
+        opacity: 0.5;
+       
+   
+    }
+   
+
+    input[type="checkbox"]:checked ~ form {
+   transform: translateX(200px);
+   opacity: 1;
+   pointer-events: visible;
+   
+   
+      
+    }
+    input[type="text"], input[type="password"]{
+       padding-left: 5px;
+    }
+  
+
+    input[type="submit"]:hover{
+        background-color: fuchsia;
+        color: white;
+    }
+   
+  
+
+  </style>
+</head>
+<body>
+  <div class="navbar">
+   
+    <div class="logo">
+     <img src="https://seeklogo.com/images/D/Disney-logo-847839C4FF-seeklogo.com.png" alt="">
+  </div>
+  <div class="user">
+    
+    <i class="fa-solid fa-user-large"></i>
+    <input type="checkbox">
+    <form action="#">
+        <div class="form">
+            <input type="text" placeholder="username">
+        </div>
+        <div class="form">
+            <input type="password" placeholder="********">
+        </div>
+        <div class="form">
+            <input type="submit" value="log in" >
+        </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>
